@@ -1,0 +1,88 @@
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+INFO: Using default value for --instrumentation_filter: "^//".
+INFO: Override the above default with --instrumentation_filter
+Analyzing: target //:UrlGetClassesUnitTests (0 packages loaded, 0 targets configured)
+INFO: Analyzed target //:UrlGetClassesUnitTests (0 packages loaded, 0 targets configured).
+INFO: Found 1 test target...
+[1 / 7] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+ERROR: /Users/<username>/Applications/swift-bazel-coverage-issue-28-03-23/BUILD:90:16: Linking ios-app_bin failed: (Exit 1): wrapped_clang failed: error executing command (from target //:ios-app) external/local_config_cc/wrapped_clang @bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-fastbuild-ST-9204ac8255b1/bin/ios-app_bin-2.params
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+Undefined symbols for architecture arm64:
+  "___llvm_profile_runtime", referenced from:
+      ___llvm_profile_runtime_user in libUrlGetClasses.a(AppDelegate.swift.o)
+      ___llvm_profile_runtime_user in libSources_GRPC.a(Array+BoundsCheck.swift.o)
+      ___llvm_profile_runtime_user in libSources_GRPC.a(ServerHandlerStateMachine+Actions.swift.o)
+      ___llvm_profile_runtime_user in libSources_GRPC.a(ServerHandlerStateMachine+Draining.swift.o)
+      ___llvm_profile_runtime_user in libSources_GRPC.a(ServerHandlerStateMachine+Finished.swift.o)
+      ___llvm_profile_runtime_user in libSources_GRPC.a(ServerHandlerStateMachine+Handling.swift.o)
+      ___llvm_profile_runtime_user in libSources_GRPC.a(ServerHandlerStateMachine+Idle.swift.o)
+      ...
+     (maybe you meant: ___llvm_profile_runtime_user)
+  "_llvm_gcda_emit_arcs", referenced from:
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSLShims.a(shims.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_object.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(asn1_lib.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_strex.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_time.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(bio.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(bio_mem.o)
+      ...
+  "_llvm_gcda_emit_function", referenced from:
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSLShims.a(shims.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_object.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(asn1_lib.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_strex.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_time.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(bio.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(bio_mem.o)
+      ...
+  "_llvm_gcda_end_file", referenced from:
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSLShims.a(shims.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_object.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(asn1_lib.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_strex.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_time.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(bio.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(bio_mem.o)
+      ...
+  "_llvm_gcda_start_file", referenced from:
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSLShims.a(shims.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_object.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(asn1_lib.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_strex.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_time.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(bio.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(bio_mem.o)
+      ...
+  "_llvm_gcda_summary_info", referenced from:
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSLShims.a(shims.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_object.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(asn1_lib.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_strex.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(a_time.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(bio.o)
+      ___llvm_gcov_writeout in libSources_CNIOBoringSSL.a(bio_mem.o)
+      ...
+  "_llvm_gcov_init", referenced from:
+      ___llvm_gcov_init in libSources_CNIOBoringSSLShims.a(shims.o)
+      ___llvm_gcov_init in libSources_CNIOBoringSSL.a(a_object.o)
+      ___llvm_gcov_init in libSources_CNIOBoringSSL.a(asn1_lib.o)
+      ___llvm_gcov_init in libSources_CNIOBoringSSL.a(a_strex.o)
+      ___llvm_gcov_init in libSources_CNIOBoringSSL.a(a_time.o)
+      ___llvm_gcov_init in libSources_CNIOBoringSSL.a(bio.o)
+      ___llvm_gcov_init in libSources_CNIOBoringSSL.a(bio_mem.o)
+      ...
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Error in child process '/usr/bin/xcrun'. 1
+Target //:UrlGetClassesUnitTests failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 0.461s, Critical Path: 0.36s
+INFO: 2 processes: 2 internal.
+FAILED: Build did NOT complete successfully
+//:UrlGetClassesUnitTests                                       FAILED TO BUILD
+
+Executed 0 out of 1 test: 1 fails to build.

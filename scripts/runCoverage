@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-bazelisk coverage //:UrlGetClassesUnitTests --experimental_inprocess_symlink_creation --sandbox_debug
+bazelisk coverage //:UrlGetClassesUnitTests --experimental_inprocess_symlink_creation
